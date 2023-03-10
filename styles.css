@@ -61,7 +61,7 @@ html{
   font-size: 1.7rem;
 }
  .btn:hover{
-    background:hsl(187, 85%, 43%);
+    background:var(--orangeshade);
     color: var(--orange);
  }
  .nav-transparent{
@@ -304,7 +304,24 @@ header .search-bar-container label:hover{
     object-fit: cover;
   }
   
+@media screen and (max-width: 1362px) {
+  .home .content {
+    padding: 0 1rem;
+  }
 
+  .home .content h3 {
+    font-size:3.5rem;
+  }
+
+  .home .content p {
+    font-size: 1.5rem;
+  }
+
+  .home .content a {
+    font-size: 1.5rem;
+    padding: 1rem;
+  }
+}
 
 @media (max-width:1200px) {
   html{
@@ -354,6 +371,9 @@ header .search-bar-container label:hover{
   html{
     font-size: 50%;
   } 
+  .home .content h3{
+  font-size:3rem;
+  }
   
 }
 
