@@ -145,6 +145,10 @@ html{
   font-size: 5rem;
   color: var(--orange);
 }
+
+.services .box-container .box .icon-wrapper {
+    color: orange;
+}
 .services .box-container .box h3{
   font-size: 2.5rem;
   color: #333;
