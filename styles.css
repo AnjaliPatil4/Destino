@@ -101,8 +101,12 @@ html{
   font-size: 1.7rem;
   color: #666;
   padding: 1rem 0;
-  
 }
+
+.packages .box-container .box .content .btn:hover{
+  background-color: var(--orangeshade);
+}
+
 .packages .box-container .box .content .stars i{
   font-size:1.7rem;
   color: var(--orangeshade);
