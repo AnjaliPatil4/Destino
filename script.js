@@ -1,0 +1,44 @@
+let searchBtn = document.querySelector("#search-btn");
+let searchBar = document.querySelector(".search-bar-container");
+let formBtn = document.querySelector("#login-btn");
+let loginForm = document.querySelector(".login-form-container");
+let formClose = document.querySelector("#form-close");
+let menu = document.querySelector("#menu-bar");
+let navbar = document.querySelector(".nav-bar");
+
+window.onscroll = () => {
+    searchBtn.classList.remove("fa-times");
+    searchBar.classList.remove("active");
+    menu.classList.remove("fa-times");
+    navbar.classList.remove("active");
+    loginForm.classList.remove("active");
+};
+
+menu.addEventListener("click", () => {
+    menu.classList.toggle("fa-times");
+    navbar.classList.toggle("active");
+});
+
+searchBtn.addEventListener("click", () => {
+    searchBtn.classList.toggle("fa-times");
+    searchBar.classList.toggle("active");
+});
+
+formBtn.addEventListener("click", () => {
+    loginForm.classList.add("active");
+});
+
+formClose.addEventListener("click", () => {
+    loginForm.classList.remove("active");
+});
+var myNav = document.getElementById('mynav');
+window.onscroll = function () { 
+    if (document.body.scrollTop >= 200 || document.documentElement.scrollTop >= 200 ){
+        myNav.classList.add("nav-colored");
+        myNav.classList.remove("nav-transparent");
+    } 
+    else {
+        myNav.classList.add("nav-transparent");
+        myNav.classList.remove("nav-colored");
+    }
+};
