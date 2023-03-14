@@ -136,6 +136,15 @@ header.icons i{
 header.icons i:hover{
   color:var(--orange);
 }
+
+.search-transparent{
+  background-color: white;
+}
+
+.search-colored{
+  background-color: #FFF9CA;
+}
+
 header .search-bar-container{
   position: absolute;
   top: 100%;
@@ -148,6 +157,7 @@ header .search-bar-container{
   z-index:1001;
   clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
 }
+
 header .search-bar-container.active{
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
 
@@ -157,7 +167,7 @@ header .search-bar-container #search-bar{
   width: 100%;
   padding:1rem;
   text-transform: none;
-  color: var(--orangeshade);
+  color: black;
   font-size: 1.7rem;
   border-radius: 0.5rem;
 }
@@ -359,10 +369,12 @@ padding-top:8rem;
 .packages{
   margin-top: 7rem;
 }
-
 .packages .heading{
-padding-top: 8rem;
+padding-top:8rem;
 }
+
+
+
 
 .packages .box-container{
   margin: 3rem 5rem 3rem;
@@ -420,10 +432,11 @@ padding-top: 8rem;
 .services{
   margin-top: 13rem;
 }
-
 .services .heading{
-padding-top: 8rem;
+padding-top:8rem;
 }
+
+
 
 .services .box-container{
   display: flex;
@@ -460,68 +473,63 @@ padding-top: 8rem;
 .services .box-container .box:hover{
   box-shadow: 0 1rem 2rem rgba(0,0,0,0.1);
 }
-
 .gallery{
-    margin-top: 7rem;
- }
- 
+  margin-top: 7rem;
+}
 .gallery .heading{
-padding-top: 8rem;
+padding-top:8rem;
 }
-  
-  .gallery .box-container{
-    margin: 5rem 3rem 0rem;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1.5rem;
-  }
-  
-  .gallery .box-container .box{
-    overflow: hidden;
-    box-shadow: 0 1rem 2rem rgba(0,0,0,0.1);
-    border: 1rem solid #fff;
-    min-height: 30rem;
-    flex: 1 1 calc(33.33% - 1.5rem);
-    height: 25rem;
-    position: relative;
-    padding: 2.5rem;
-  }
-  .gallery .box-container .box img{
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-  
-  }
-  .gallery .box-container .box .content{
-   position: absolute;
-   top: -100%; left: 0;
-   height: 100%;
-   width: 100%;
-   text-align: center;
-   background: rgba(0,0,0,0.7);
-   padding: 5rem;
-   padding-top: 5rem;
-  
-  
-  }
-  .gallery .box-container .box:hover .content{
-    top:0;
-  }
-  .gallery .box-container .box .content h3{
-    font-size: 2.5rem;
-    color: var(--orangeshade);
-  
-  }
-  .gallery .box-container .box .content p{
-    font-size: 1.5rem;
-    color: #eee;
-    padding: .5rem 0;
-   
-  }
-  
-.gallery .box-container .box .content .btn:hover{
-  background-color: var(--orangeshade);
+.gallery .box-container{
+  margin: 5rem 3rem 0rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
 }
+
+.gallery .box-container .box{
+  overflow: hidden;
+  box-shadow: 0 1rem 2rem rgba(0,0,0,0.1);
+  border: 1rem solid #fff;
+  min-height: 30rem;
+  flex: 1 1 45rem;
+  height: 25rem;
+  position: relative;
+  padding: 1rem;
+}
+.gallery .box-container .box img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+
+}
+.gallery .box-container .box .content{
+ position: absolute;
+ top: -100%; left: 0;
+ height: 100%;
+ width: 100%;
+ text-align: center;
+ background: rgba(0,0,0,0.7);
+ padding: 2rem;
+ padding-top: 5rem;
+
+
+}
+.gallery .box-container .box:hover .content{
+  top:0;
+}
+.gallery .box-container .box .content h3{
+  font-size: 2.5rem;
+  color: white;
+  font-weight:bold;
+
+}
+.gallery .box-container .box .content p{
+  font-size: 2rem;
+  color: #fff;
+  padding: .5rem 0;
+ 
+}
+
 
 .review {
   margin-top: 10rem;
@@ -568,9 +576,8 @@ padding-top: 8rem;
   margin-top: 7rem;
   margin-bottom: 3rem;
 }
-
 .contact .heading{
-padding-top: 8rem;
+padding-top:8rem;
 }
 
 .contact .row {
@@ -617,7 +624,9 @@ padding-top: 8rem;
 }
 
 .brand-container .heading{
-padding-top: 8rem;
+
+padding-top:8rem;
+
 }
 
 .swiper-slide {
@@ -712,7 +721,13 @@ padding-top: 8rem;
   margin: 0;
   min-height: 100%;
 }
-
+@media (max-width:1460px) {
+  .gallery .box-container .box .content p{
+    font-size: 1.2rem;
+        
+  } 
+  
+}
 @media screen and (max-width: 1362px) {
   .home .content {
     padding: 0 1rem;
@@ -749,7 +764,7 @@ padding-top: 8rem;
   
   
 }
-@media (max-width:850px) {
+@media (max-width:990px) {
   #menu-bar{
     display:initial;
   }
@@ -775,6 +790,8 @@ padding-top: 8rem;
     background: #222;
   }
 }
+
+
 
 @media (max-width:450px) {
   html{

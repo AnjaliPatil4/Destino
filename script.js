@@ -5,6 +5,8 @@ let loginForm = document.querySelector(".login-form-container");
 let formClose = document.querySelector("#form-close");
 let menu = document.querySelector("#menu-bar");
 let navbar = document.querySelector(".nav-bar");
+let myNav = document.getElementById('mynav');
+let mySearch = document.getElementById('search-bar');
 
 window.onscroll = () => {
     searchBtn.classList.remove("fa-times");
@@ -31,15 +33,19 @@ formBtn.addEventListener("click", () => {
 formClose.addEventListener("click", () => {
     loginForm.classList.remove("active");
 });
-var myNav = document.getElementById('mynav');
+
 window.onscroll = function () { 
     if (document.body.scrollTop >= 200 || document.documentElement.scrollTop >= 200 ){
         myNav.classList.add("nav-colored");
         myNav.classList.remove("nav-transparent");
+        mySearch.classList.add("search-colored");
+        mySearch.classList.remove("search-transparent");
     } 
     else {
         myNav.classList.add("nav-transparent");
         myNav.classList.remove("nav-colored");
+        mySearch.classList.add("search-transparent");
+        mySearch.classList.remove("search-colored");
     }
 };
 var swiper = new Swiper(".review-slider" , {
