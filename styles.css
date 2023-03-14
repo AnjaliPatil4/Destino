@@ -57,8 +57,8 @@ html {
   font-size: 1.7rem;
 }
 .btn:hover {
-  background: hsl(187, 85%, 43%);
-  color: var(--orange);
+  background: var(--orangeshade);
+  color: white;
 }
 
 .nav-transparent{
@@ -124,7 +124,7 @@ header .navbar a{
   
 }
 header .navbar a:hover{
-  color:hsl(240, 4%, 36%);
+  color:black;
 }
 
 header.icons i{
@@ -383,7 +383,7 @@ padding-top:8rem;
   gap: 2rem;
 }
 .packages .box-container .box{
-  padding: 2rem;
+  padding: 5rem;
   flex:1 1 45rem;
   border-radius: .5rem;
   overflow: hidden;
@@ -448,7 +448,7 @@ padding-top:8rem;
   margin: 5rem 3rem 0rem;
   flex: 1 1 40rem;
   border-radius: .5rem;
-  padding: 2rem;
+  padding: 5rem;
   min-height: 20rem;
   text-align: center;
 }
@@ -524,7 +524,7 @@ padding-top:8rem;
 
 }
 .gallery .box-container .box .content p{
-  font-size: 2rem;
+  font-size: 1.6rem;
   color: #fff;
   padding: .5rem 0;
  
@@ -788,6 +788,13 @@ padding-top:8rem;
     padding: 1.5rem;
     margin: 1.5rem 0;
     background: #222;
+  }
+  .aero{
+    display:none;
+  }
+  .contact .row form {
+    margin-right:30rem;
+    margin-top:3rem;
   }
 }
 
